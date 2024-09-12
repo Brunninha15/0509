@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p id="demonstração"></p>
-<script>
-    const idades = [ 32, 33, 19, 48 ];
-    function checkAge (idade){
-        return idade > 18;
-    }
-    document.getElementById("demosntração").ineerHTML = "Todos os elementos tem mais de 18 anos?" + idades.every(checkAge); 
-</script>
+    <script>
+        const idades = [32, 33, 19, 48];
+        document.getElementById("demonstração").ineerHTML = idade.filter(checkAdult);
+        function checkAdult(idades) {
+            return idades >= 18;
+        } 
+    </script>
 </body>
+
 </html>
